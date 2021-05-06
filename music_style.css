@@ -1,0 +1,187 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: helvetica;
+}
+
+.wrapper {
+  background-color: #BDBEBD;
+  width: 100vw;
+  height: 100vh;
+}
+
+.button {
+  display: inline-block;
+  color: black;
+  background-color: #BDBEBD;
+  padding: 4px;
+  border-right: 2px solid grey;
+  border-bottom: 2px solid grey;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  height: 22px;
+  width: 22px;
+}
+
+#seek-bar {
+  width: 100%;
+}
+
+.seek-wrapper {
+  width: 100%;
+  margin: auto;
+  padding: 8px;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 300px;
+  height: 7px;
+  background: #BDBEBD;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  border-top: 2px solid grey;
+  border-left: 2px solid grey;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border-right: 2px solid grey;
+  border-bottom: 2px solid grey;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  height: 18px;
+  width: 9px;
+  margin-top: -8px;
+  box-shadow: inset 1px 1px 2px 0px rgba(0, 0, 0, 0.75);
+  background-color: #BDBEBD;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #ccc;
+}
+
+.window {
+  background-color: #BDBEBD;
+  border-left: 1px solid white;
+  border-bottom: 1px solid black;
+  border-top: 1px solid white;
+  border-right: 1px solid black;
+  box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.75);
+  display: block;
+  position: absolute;
+}
+
+.window-inner {
+  border: 2px solid #BDBEBD;
+  height: 100%;
+}
+
+.window-header {
+  background: linear-gradient(to right, #000080, #1084d0);
+  padding: 3px;
+  overflow: auto;
+  font-size: 15px;
+}
+
+.window-header p {
+  color: white;
+  display: inline;
+  position: absolute;
+  vertical-align: middle;
+  display: inline;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 80%;
+}
+
+#computer-icon p::before {
+  background-image: url("https://i.imgur.com/qvOJoOu.png");
+  background-size: auto 100%;
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+  height: 22px;
+  width: 25px;
+  display: block;
+  content: "";
+  float: left;
+}
+
+.window-icon {
+  width: 20px;
+  height: 20px;
+  background-color: #BDBEBD;
+  display: inline-block;
+  float: right;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.close {
+  background-image: url("https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_close_48px-128.png");
+  background-size: auto 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+img {
+  max-width: 90%;
+  max-height: 90%;
+  height: auto;
+}
+
+.window-content {
+  margin-top: 2px;
+  border: 2px solid #808080;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+  height: calc( 100% - 28px);
+}
+
+#play {
+  background-image: url("https://maxcdn.icons8.com/iOS7/PNG/25/Media_Controls/play_filled-25.png");
+  background-size: auto 100%;
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+}
+
+#pause {
+  background-image: url("https://maxcdn.icons8.com/iOS7/PNG/32/Media_Controls/pause_filled-32.png");
+  background-size: auto 100%;
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+}
+
+#stop {
+  background-image: url("https://cdn4.iconfinder.com/data/icons/defaulticon/icons/png/32x32/media-stop.png");
+  background-size: auto 100%;
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+}
+
+.dark-bg {
+  background-color: black;
+  padding: 3px;
+  color: white;
+  margin-top: 5px;
+}
+
+#media-player {
+  width: 300px;
+}
+
+.lyrics {
+  padding: 10px;
+}

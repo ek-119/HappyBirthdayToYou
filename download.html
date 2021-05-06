@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>비밀번호</title>
+  <link rel="stylesheet" href="download_style.css">
+<SCRIPT LANGUAGE=JavaScript>
+function decrypt(pwd) {
+	const answer = '김채현생일정말축하해100년지나도친구하자';
+    if(pwd == null || pwd.length <= 0) {
+      alert('비밀번호를 입력하세요. ');
+      return
+    }
+    if(pwd != answer){
+      alert('비밀번호가 틀립니다. ');
+    }
+    else {
+      window.location.href = "letter.html";
+    }
+}
+
+</SCRIPT>
+</HEAD>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="overlay overlay--scanline"></div>
+<div class="overlay overlay--vignette"></div>
+<div class="flex-full-justify">
+  <div class="flex-inner">
+    <div class="text-center">
+      <h1>What's Your Password?</h1>
+    </div>
+    <p><img src="https://res.cloudinary.com/penry/image/upload//w_65,h_65,c_lpad/v1474990266/msie2_ks3wek.png" height=25>(related)
+      + <img src="https://res.cloudinary.com/penry/image/upload//w_40,h_40,c_lpad/v1474990234/cd_audio_cd_mcloiq.png" height=25>*10(name)years
+      + <img src="https://res.cloudinary.com/penry/image/upload//w_65,h_65,c_lpad/v1474990266/msie2_ks3wek.png" height=25>(ranking)</p>
+    </br><p>* Find the answer! (Write in Korean)</p>
+	  <form action="javascript:decrypt(document.all.pass.value);">
+<input type='text' name='pass' class="text17" size='10'> <input type=submit class="button" value=click>
+</form>
+  </div>
+</div>
+<!-- partial -->
+  
+</body>
+</html>

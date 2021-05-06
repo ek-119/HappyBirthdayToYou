@@ -1,0 +1,162 @@
+@font-face {
+  font-family: 'DOSMyungjo';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/DOSMyungjo.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+background-color: #007d7b;
+margin:0;
+}
+
+.button {
+background-color: #bfb8bf;
+position: fixed;
+overflow: auto;
+z-index: 1;
+left: 0;
+right: 0;
+top: 300px;
+-webkit-transform: translateY(-50%);
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+width: 224px;
+height: 63px;
+text-align: center;
+padding: 6px;
+color: #000;
+font-family: 'DOSMyungjo';  font-size: 15px;
+display:inline-block;
+margin: auto;
+-webkit-box-shadow: inset -1px     -1px 0px 0px rgba(0,0,0,1);
+-moz-box-shadow: inset -1px -1px   0px 0px rgba(0,0,0,1);
+box-shadow: inset -1px -1px 0px     0px rgba(0,0,0,1);
+-webkit-box-sizing: border-box; 
+-moz-box-sizing: border-box;    
+box-sizing: border-box;         
+cursor: pointer;
+}
+
+.buttonline {
+border: 1px dotted #cccccc;
+width: 100%;
+height: 49px;
+padding: 12px 0;
+-webkit-box-sizing: border-box; 
+-moz-box-sizing: border-box;    
+box-sizing: border-box;         
+}
+
+.button:hover .buttonline{
+border: 1px dotted #000;
+}
+.button:active {
+left: 2px;
+right: 0;
+top: 320px;
+-webkit-transform: translateY(-50%);
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+}
+
+.button:active:after {
+width: 225px;
+height: 64px;
+bottom: 1px;
+}
+
+.button::before {
+  width: 224px;
+  height: 63px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  content: '';
+  z-index: -1;
+  -webkit-box-shadow: -1px -1px 0px 0px rgba(255,255,255,1);
+  -moz-box-shadow: -1px -1px 0px 0px rgba(255,255,255,1);
+  box-shadow: -1px -1px 0px 0px rgba(255,255,255,1);
+}
+.button::after {
+width: 226px;
+height: 65px;
+position: absolute;
+bottom: 0px;
+left: -2px;
+content: '';
+z-index: -1;
+-webkit-box-shadow: 1px 1px 0px 0px rgba(0,0,0,1);
+-moz-box-shadow: 1px 1px 0px 0px rgba(0,0,0,1);
+box-shadow: 1px 1px 0px 0px rgba(0,0,0,1);
+}
+
+#myProgress {
+width: 50vw;
+margin: 0 auto;
+background-color: #bfb8bf;
+margin-top: 15%;
+}
+
+#myBar {
+width: 1%;
+height: 20px;
+background-color: #00007f;
+}
+
+.modal {
+display: none;
+position: fixed;
+z-index: 1;
+left: 0;
+top: 0;
+height: 100%;
+width: 100%;
+overflow: auto;
+background-color: rgba(0, 0, 0, 0.1);
+font-family: 'DOSMyungjo';
+}
+
+.modal-content {
+margin: 10% auto;
+width: 70%;
+background-color:#bfb8bf;
+border: 2px solid;
+border-bottom-color: #535353;
+border-right-color: #535353;
+border-left-color: #dbdbdb;
+border-top-color: #dbdbdb;
+/*box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);*/
+animation-name: modalopen;
+animation-duration: var(--modal-duration);
+font-size: 13px;
+font-family: 'DOSMyungjo';
+
+}
+
+.modal-header h2{
+margin: 0;
+ font-size: 13px;
+font-family: 'DOSMyungjo';
+padding: 2px 4px 3px 4px;
+position: relative;
+color: #fff;
+}
+
+.modal-header {
+background: linear-gradient(to right, #000080, #1084d0);
+}
+
+.modal-body {
+padding: 10px 20px;
+background: #fff;
+}
+
+@keyframes modalopen {
+from {
+  opacity: 0;
+}
+to {
+  opacity: 1;
+}
+}
