@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Pinyon+Script&display=swap');
+
+html,
+body {
+  color: #681;
+  margin: 0 auto;
+  float: center;
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Pinyon Script', cursive;
+}
+/* ---- Timeline ---- */
+ol {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  float:center;
+  width: 2px;
+  background: #000;
+}
+/* ---- Timeline elements ---- */
+li {
+  position: relative;
+  top: 2.5em;
+  display: inline-block;
+  left: 1em;
+  height: 5em;
+  width: 10em;
+  font-family: 14px 'Noto Sans KR', sans-serif;
+  /* ---- Details ---- */
+}
+li::before {
+  content: "";
+  position: absolute;
+  top: -0.2em;
+  left: -20px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  border: 3px solid #ff0085;
+  border-radius: 10px;
+}
+li.saint-michel::before {
+  background-color: #211B8F;
+}
+li.opera::before {
+  background-color: #211B8F;
+}
+li.cityhall::before {
+  background-color: #211B8F;
+}
+li.catacombes::before {
+  background-color: #211B8F;
+}
+li.grands-boulevards::before {
+  background-color: #211B8F;
+}
+li aside {
+  display: none;
+  position: absolute;
+  width: 30px;
+  left: -100px;
+  top: -0.8em;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 0px solid rgba(0, 0, 128, 0.1);
+  border-left: 2px solid rgba(0, 0, 128, 0.1);
+  border-bottom: 2px solid rgba(0, 0, 128, 0.1);
+  font-family: 12px 'Noto Sans KR', sans-serif;
+  background: #fff;
+}
+li aside::before {
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: 43%;
+  display: block;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-left-color: rgba(0, 0, 0, 0.1);
+  margin-top: -5px;
+}
+/* ---- Hover effects ---- */
+li:hover {
+  cursor: pointer;
+  color: #ff004f;
+}
+li:hover::before {
+  border-color: #ff004f;
+}
+li:hover aside {
+  display: block;
+  color: #ff004f;
+}
